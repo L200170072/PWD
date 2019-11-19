@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Tugas Modul8</title>
+        <script>
+            var nilai;
+
+            function lihat(){
+                nilai = document.getElementById("myinput").value;
+                if(0<=nilai && nilai<=20){
+                    document.getElementById("rf").innerHTML = "hasilnya E";
+                }
+                else if(21<=nilai && nilai<=40){
+                    document.getElementById("rf").innerHTML = "hasilnya D";
+                }
+                else if(41<=nilai && nilai<=60){
+                    document.getElementById("rf").innerHTML = "hasilnya C";
+                }
+                else if(61<=nilai && nilai<=80){
+                    document.getElementById("rf").innerHTML = "hasilnya B";
+                }
+                else if(81<=nilai && nilai<=100){
+                    document.getElementById("rf").innerHTML = "hasilnya A";
+                }
+                else {
+                    document.getElementById("rf").innerHTML =
+                    alert("nilai lebih dari 100");
+                -->
+                }
+                
+
+            }
+        </script>
+    </head>
+    <body>
+           
+        <form name="tugas">
+            masukan nilai : <input type="text" id="myinput" size="20" maxlength="5"></br>
+            <input type="button" onclick="lihat();" value="check" >
+        </form>
+        <h3 id="rf"></h3>
+    
+    </body>
+</html>
